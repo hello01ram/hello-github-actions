@@ -7,7 +7,7 @@ async function getData() {
     try {
         const data = await axios.get("https://jsonplaceholder.typicode.com/posts");
         const posts = data.data;
-    console.log(data);
+        console.log(posts);
     } catch (e) {
         console.error("Failed: " + e);
     }
